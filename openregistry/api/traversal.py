@@ -28,7 +28,7 @@ def get_item(parent, key, request):
         request.errors.status = 404
         raise error_handler(request)
     else:
-        if key == 'document':
+        if key in ['document', 'item', 'publication']:
             request.validated['{}s'.format(key)] = items
         item = items[-1]
         request.validated[key] = item

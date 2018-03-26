@@ -70,7 +70,6 @@ schema_properties = {
 test_item_data_with_schema = deepcopy(test_item_data)
 test_item_data_with_schema['classification']['id'] = schema_properties['code']
 test_item_data_with_schema['schema_properties'] = schema_properties
-
 test_asset_basic_data = {
     "title": u"Земля для космодрому",
     "assetType": "basic",
@@ -135,3 +134,22 @@ test_lot_data = {
     "lotCustodian": deepcopy(test_organization),
     "assets": []
 }
+
+test_ssp_document_data = deepcopy(test_document_data)
+test_ssp_lot_data = {
+    "title": u"Тестовий лот",
+    "description": u"Щось там тестове",
+    "lotIdentifier": u"Q81318b19827",
+    "lotType": "ssp",
+    "lotCustodian": deepcopy(test_organization),
+    "assets": []
+}
+
+test_ssp_publication_data = {
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+}
+
+test_ssp_item_data = deepcopy(test_item_data)
